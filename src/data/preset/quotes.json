@@ -1,0 +1,15 @@
+{
+  "theme": "人生感悟",
+  "items": [
+    { "id": "q-1", "text": "不要等待机会，而要创造机会。", "image": "", "source": "语录", "license": "permitted", "score": 0.87, "tags": ["励志"], "lang": "zh" },
+    { "id": "q-2", "text": "把简单的事做好就是不简单。", "image": "", "source": "语录", "license": "permitted", "score": 0.82, "tags": ["方法"], "lang": "zh" },
+    { "id": "q-3", "text": "先行动起来，最小可行。", "image": "", "source": "实践", "license": "permitted", "score": 0.8, "tags": ["执行"], "lang": "zh" },
+    { "id": "q-4", "text": "你怎么过一天，便怎么过一生。", "image": "", "source": "语录", "license": "permitted", "score": 0.86, "tags": ["人生"], "lang": "zh" },
+    { "id": "q-5", "text": "少抱怨，多解决。", "image": "", "source": "语录", "license": "permitted", "score": 0.81, "tags": ["行动"], "lang": "zh" },
+    { "id": "q-6", "text": "长期主义者，赢在复利。", "image": "", "source": "语录", "license": "permitted", "score": 0.85, "tags": ["长期"], "lang": "zh" },
+    { "id": "q-7", "text": "今天的你，值得你自己喜欢。", "image": "", "source": "语录", "license": "permitted", "score": 0.8, "tags": ["自洽"], "lang": "zh" },
+    { "id": "q-8", "text": "先把桌面上的事做完。", "image": "", "source": "语录", "license": "permitted", "score": 0.79, "tags": ["专注"], "lang": "zh" },
+    { "id": "q-9", "text": "保持热爱，奔赴山海。", "image": "", "source": "语录", "license": "permitted", "score": 0.84, "tags": ["热爱"], "lang": "zh" },
+    { "id": "q-10", "text": "做时间的朋友。", "image": "", "source": "语录", "license": "permitted", "score": 0.83, "tags": ["时间"], "lang": "zh" }
+  ]
+}

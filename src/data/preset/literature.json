@@ -1,0 +1,15 @@
+{
+  "theme": "文学",
+  "items": [
+    { "id": "lit-1", "text": "你若盛开，清风自来。", "image": "", "source": "诗句", "license": "permitted", "score": 0.88, "tags": ["诗歌"], "lang": "zh" },
+    { "id": "lit-2", "text": "凡是过往，皆为序章。", "image": "", "source": "莎士比亚", "license": "permitted", "score": 0.9, "tags": ["经典"], "lang": "zh" },
+    { "id": "lit-3", "text": "山高月小，水落石出。", "image": "", "source": "苏轼", "license": "permitted", "score": 0.86, "tags": ["古文"], "lang": "zh" },
+    { "id": "lit-4", "text": "行到水穷处，坐看云起时。", "image": "", "source": "王维", "license": "permitted", "score": 0.87, "tags": ["诗歌"], "lang": "zh" },
+    { "id": "lit-5", "text": "风乍起，吹皱一池春水。", "image": "", "source": "冯延巳", "license": "permitted", "score": 0.85, "tags": ["词"], "lang": "zh" },
+    { "id": "lit-6", "text": "人生如逆旅，我亦是行人。", "image": "", "source": "苏轼", "license": "permitted", "score": 0.89, "tags": ["哲理"], "lang": "zh" },
+    { "id": "lit-7", "text": "苟日新，日日新，又日新。", "image": "", "source": "大学", "license": "permitted", "score": 0.84, "tags": ["修身"], "lang": "zh" },
+    { "id": "lit-8", "text": "不要温顺地走进那个良夜。", "image": "", "source": "托马斯·狄兰", "license": "permitted", "score": 0.83, "tags": ["诗歌"], "lang": "zh" },
+    { "id": "lit-9", "text": "与其苟且，不如远方。", "image": "", "source": "散文", "license": "permitted", "score": 0.8, "tags": ["远方"], "lang": "zh" },
+    { "id": "lit-10", "text": "花开堪折直须折，莫待无花空折枝。", "image": "", "source": "杜秋娘", "license": "permitted", "score": 0.82, "tags": ["惜时"], "lang": "zh" }
+  ]
+}

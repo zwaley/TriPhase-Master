@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日签生成器</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <script type="module" crossorigin src="./assets/index-53d77b32.js"></script>
+</head>
+
+<body style="margin:0; background:#f6f7f9;">
+  <div id="root"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>

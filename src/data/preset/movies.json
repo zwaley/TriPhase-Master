@@ -1,0 +1,15 @@
+{
+  "theme": "电影",
+  "items": [
+    { "id": "movie-1", "text": "愿你出走半生，归来仍是少年。", "image": "", "source": "后会无期", "license": "permitted", "score": 0.9, "tags": ["励志"], "lang": "zh" },
+    { "id": "movie-2", "text": "人生就是不断地选择与放弃。", "image": "", "source": "台词", "license": "permitted", "score": 0.85, "tags": ["思考"], "lang": "zh" },
+    { "id": "movie-3", "text": "希望是美好的，也许是人间至善。", "image": "", "source": "肖申克的救赎", "license": "permitted", "score": 0.95, "tags": ["希望"], "lang": "zh" },
+    { "id": "movie-4", "text": "不是所有流浪都能找到归途。", "image": "", "source": "台词", "license": "permitted", "score": 0.82, "tags": ["人生"], "lang": "zh" },
+    { "id": "movie-5", "text": "你看那个人像不像一条狗？", "image": "", "source": "无间道", "license": "permitted", "score": 0.8, "tags": ["讽刺"], "lang": "zh" },
+    { "id": "movie-6", "text": "有人活着，他已经死了；有人死了，他还活着。", "image": "", "source": "甲方乙方", "license": "permitted", "score": 0.86, "tags": ["哲思"], "lang": "zh" },
+    { "id": "movie-7", "text": "明白的人懂得放弃，真爱的人懂得牺牲。", "image": "", "source": "东邪西毒", "license": "permitted", "score": 0.84, "tags": ["情感"], "lang": "zh" },
+    { "id": "movie-8", "text": "一念天堂，一念地狱。", "image": "", "source": "台词", "license": "permitted", "score": 0.83, "tags": ["抉择"], "lang": "zh" },
+    { "id": "movie-9", "text": "要么庸俗，要么孤独。", "image": "", "source": "台词", "license": "permitted", "score": 0.81, "tags": ["选择"], "lang": "zh" },
+    { "id": "movie-10", "text": "当你凝视深渊，深渊也在凝视你。", "image": "", "source": "台词", "license": "permitted", "score": 0.87, "tags": ["哲学"], "lang": "zh" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "windsurf-daily-card",
+  "version": "1.0.0",
+  "description": "网页版日签生成器",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "android:copy": "node scripts/copy-dist-to-android.js"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "lunar-javascript": "^1.7.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^4.0.0"
+  }
+}

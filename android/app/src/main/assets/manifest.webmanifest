@@ -1,0 +1,10 @@
+{
+  "name": "日签生成器",
+  "short_name": "日签",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#1677ff",
+  "lang": "zh-CN",
+  "icons": []
+}

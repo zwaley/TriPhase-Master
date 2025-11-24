@@ -66,13 +66,20 @@ function get(urlStr) {
 function getBinary(urlStr) {
   return new Promise((resolve, reject) => {
     const lib = urlStr.startsWith('https') ? https : http;
-    const req = lib.get(urlStr, (resp) => {
-      const chunks = [];
-      resp.on('data', (chunk) => chunks.push(Buffer.from(chunk)));
-      resp.on('end', () => resolve({ status: resp.statusCode, data: Buffer.concat(chunks), headers: resp.headers }));
-    });
-    req.on('error', reject);
-    req.setTimeout(5000, () => { req.destroy(); reject(new Error('timeout')); });
+    const doReq = (u, redirectsLeft) => {
+      const req = lib.get(u, (resp) => {
+        if (resp.statusCode && resp.statusCode >= 300 && resp.statusCode < 400 && resp.headers && resp.headers.location && redirectsLeft > 0) {
+          doReq(resp.headers.location, redirectsLeft - 1);
+          return;
+        }
+        const chunks = [];
+        resp.on('data', (chunk) => chunks.push(Buffer.from(chunk)));
+        resp.on('end', () => resolve({ status: resp.statusCode, data: Buffer.concat(chunks), headers: resp.headers }));
+      });
+      req.on('error', reject);
+      req.setTimeout(5000, () => { req.destroy(); reject(new Error('timeout')); });
+    };
+    doReq(urlStr, 3);
   });
 }
 
@@ -144,7 +151,10 @@ const server = http.createServer(async (req, res) => {
     const w = Math.max(1, Math.min(4096, parseInt(u.query.w || '720', 10)));
     const h = Math.max(1, Math.min(4096, parseInt(u.query.h || '320', 10)));
     const seed = u.query.seed || `${Date.now()}`;
-    const urlImg = `https://picsum.photos/seed/${encodeURIComponent(theme + '-' + seed)}/${w}/${h}`;
+    const query = (u.query.query || '').trim();
+    const urlImg = query
+      ? `https://source.unsplash.com/${w}x${h}/?${encodeURIComponent(query)}`
+      : `https://picsum.photos/seed/${encodeURIComponent(theme + '-' + seed)}/${w}/${h}`;
     try {
       const r = await getBinary(urlImg);
       if (r.status === 200 && r.data && r.data.length > 0) {

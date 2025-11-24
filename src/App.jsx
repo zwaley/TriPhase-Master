@@ -47,6 +47,25 @@ function App() {
   });
   const [onlineStatus, setOnlineStatus] = useState("unknown");
 
+  const buildSourceLabel = (p) => {
+    const type = p.sourceType || p.type || "";
+    const t = p.title || p.source || "";
+    const a = p.author || "";
+    if (type && t && a) return `${type} · ${t} · ${a}`;
+    if (type && t) return `${type} · ${t}`;
+    if (p.source) return p.source;
+    return "";
+  };
+
+  const buildImageQuery = (p) => {
+    const arr = [];
+    if (p.sourceType) arr.push(p.sourceType);
+    if (p.title) arr.push(p.title);
+    if (p.author) arr.push(p.author);
+    const tags = Array.isArray(p.tags) ? p.tags : [];
+    return [...arr, ...tags].filter(Boolean).join(',');
+  };
+
   useEffect(() => {
     if (!formData.autoGenerate) return;
     (async () => {
@@ -71,10 +90,12 @@ function App() {
       if (!pick) pick = await selectContent({ date: now, theme: formData.contentTheme });
       if (!pick) return;
       let img = null;
+      const label = buildSourceLabel(pick);
+      const query = buildImageQuery(pick) || formData.contentTheme;
       if (formData.onlineEnhance) {
         try {
           const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8787";
-          img = await randomImageDataUrl({ theme: formData.contentTheme, apiBase: API_BASE });
+          img = await randomImageDataUrl({ theme: formData.contentTheme, query, apiBase: API_BASE });
         } catch (e) {}
       }
       setFormData((prev) => ({
@@ -91,6 +112,8 @@ function App() {
           },
         ],
         illustration: img || generatePlaceholder(formData.contentTheme),
+        sourceLabel: label,
+        sourceMeta: pick,
       }));
     })();
   }, [formData.autoGenerate, formData.contentTheme, formData.onlineEnhance]);
@@ -113,6 +136,7 @@ function App() {
     }
     if (!pick) pick = await refreshContent({ date: now, theme: formData.contentTheme });
     if (!pick) return;
+    const label = buildSourceLabel(pick);
     setFormData((prev) => ({
       ...prev,
       textBlocks: [
@@ -126,13 +150,16 @@ function App() {
           color: prev.textBlocks[0]?.color || (prev.isDarkMode ? "#ffffff" : "#333333"),
         },
       ],
+      sourceLabel: label,
+      sourceMeta: pick,
     }));
   };
 
   const handleRefreshImage = async () => {
     try {
       const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8787";
-      const img = await randomImageDataUrl({ theme: formData.contentTheme, apiBase: API_BASE });
+      const query = formData.sourceMeta ? buildImageQuery(formData.sourceMeta) : formData.contentTheme;
+      const img = await randomImageDataUrl({ theme: formData.contentTheme, query, apiBase: API_BASE });
       setFormData((prev) => ({ ...prev, illustration: img }));
     } catch (e) {
       setFormData((prev) => ({ ...prev, illustration: generatePlaceholder(formData.contentTheme) }));

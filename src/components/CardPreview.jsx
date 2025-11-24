@@ -661,6 +661,11 @@ function CardPreview({ formData }) {
                   {block.content}
                 </div>
               ))}
+              {formData.sourceLabel && (
+                <div style={{ marginTop: 8, fontSize: "13px", color: formData.isDarkMode ? "#ccc" : "#666", fontStyle: "italic" }}>
+                  来源：{formData.sourceLabel}
+                </div>
+              )}
             </div>
             
             {/* 个人信息部分 */}
@@ -713,6 +718,11 @@ function CardPreview({ formData }) {
                   {block.content}
                 </div>
               ))}
+              {formData.sourceLabel && (
+                <div style={{ marginTop: 8, fontSize: "13px", color: formData.isDarkMode ? "#ccc" : "#666", fontStyle: "italic" }}>
+                  来源：{formData.sourceLabel}
+                </div>
+              )}
             </div>
             
             {/* 文本下方的分隔线 */}

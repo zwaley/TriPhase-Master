@@ -10,6 +10,8 @@
     { "id": "movie-7", "text": "明白的人懂得放弃，真爱的人懂得牺牲。", "image": "", "source": "东邪西毒", "license": "permitted", "score": 0.84, "tags": ["情感"], "lang": "zh" },
     { "id": "movie-8", "text": "一念天堂，一念地狱。", "image": "", "source": "台词", "license": "permitted", "score": 0.83, "tags": ["抉择"], "lang": "zh" },
     { "id": "movie-9", "text": "要么庸俗，要么孤独。", "image": "", "source": "台词", "license": "permitted", "score": 0.81, "tags": ["选择"], "lang": "zh" },
-    { "id": "movie-10", "text": "当你凝视深渊，深渊也在凝视你。", "image": "", "source": "台词", "license": "permitted", "score": 0.87, "tags": ["哲学"], "lang": "zh" }
+    { "id": "movie-10", "text": "当你凝视深渊，深渊也在凝视你。", "image": "", "source": "台词", "license": "permitted", "score": 0.87, "tags": ["哲学"], "lang": "zh" },
+    { "id": "movie-11", "text": "希望是美好的，也许是人间至善，而美好的事物永不消逝。人在最艰难的时候，恰恰需要一件稳定的东西——哪怕只是一句提醒：抬头看看窗外的天，它始终在那里。", "image": "", "source": "电影台词", "sourceType": "电影", "title": "肖申克的救赎", "author": "弗兰克·德拉邦特", "license": "permitted", "score": 0.93, "tags": ["希望", "坚韧"], "lang": "zh" },
+    { "id": "movie-12", "text": "真正的勇敢，并不是从不害怕，而是在害怕的时候仍然选择向前。世界并不会因为你的犹豫而停下脚步，但它会因你的一步而改变路径。", "image": "", "source": "电影叙事", "sourceType": "电影", "title": "勇敢者的心", "author": "佚名", "license": "permitted", "score": 0.88, "tags": ["勇气", "选择"], "lang": "zh" }
   ]
 }

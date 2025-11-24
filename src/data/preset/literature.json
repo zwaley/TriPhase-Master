@@ -10,6 +10,8 @@
     { "id": "lit-7", "text": "苟日新，日日新，又日新。", "image": "", "source": "大学", "license": "permitted", "score": 0.84, "tags": ["修身"], "lang": "zh" },
     { "id": "lit-8", "text": "不要温顺地走进那个良夜。", "image": "", "source": "托马斯·狄兰", "license": "permitted", "score": 0.83, "tags": ["诗歌"], "lang": "zh" },
     { "id": "lit-9", "text": "与其苟且，不如远方。", "image": "", "source": "散文", "license": "permitted", "score": 0.8, "tags": ["远方"], "lang": "zh" },
-    { "id": "lit-10", "text": "花开堪折直须折，莫待无花空折枝。", "image": "", "source": "杜秋娘", "license": "permitted", "score": 0.82, "tags": ["惜时"], "lang": "zh" }
+    { "id": "lit-10", "text": "花开堪折直须折，莫待无花空折枝。", "image": "", "source": "杜秋娘", "license": "permitted", "score": 0.82, "tags": ["惜时"], "lang": "zh" },
+    { "id": "lit-11", "text": "我们走在黑夜里，并非要战胜黑暗，而是为了在行走中学会辨认光。每一次跌倒都在提醒我们，脚下的路属于自己，心中的灯也属于自己。", "image": "", "source": "现代散文", "sourceType": "散文", "title": "行走的光", "author": "佚名", "license": "permitted", "score": 0.86, "tags": ["光", "成长"], "lang": "zh" },
+    { "id": "lit-12", "text": "人与人之间的连接从来不是靠语言本身，而是语言之后的理解与愿意——愿意停下倾听，愿意在对方的世界里稍作停留。这份愿意，才是人类最珍贵的温柔。", "image": "", "source": "随笔", "sourceType": "随笔", "title": "温柔的愿意", "author": "佚名", "license": "permitted", "score": 0.85, "tags": ["沟通", "温柔"], "lang": "zh" }
   ]
 }

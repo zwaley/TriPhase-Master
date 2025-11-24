@@ -10,6 +10,9 @@
     { "id": "q-7", "text": "今天的你，值得你自己喜欢。", "image": "", "source": "语录", "license": "permitted", "score": 0.8, "tags": ["自洽"], "lang": "zh" },
     { "id": "q-8", "text": "先把桌面上的事做完。", "image": "", "source": "语录", "license": "permitted", "score": 0.79, "tags": ["专注"], "lang": "zh" },
     { "id": "q-9", "text": "保持热爱，奔赴山海。", "image": "", "source": "语录", "license": "permitted", "score": 0.84, "tags": ["热爱"], "lang": "zh" },
-    { "id": "q-10", "text": "做时间的朋友。", "image": "", "source": "语录", "license": "permitted", "score": 0.83, "tags": ["时间"], "lang": "zh" }
+    { "id": "q-10", "text": "做时间的朋友。", "image": "", "source": "语录", "license": "permitted", "score": 0.83, "tags": ["时间"], "lang": "zh" },
+    { "id": "q-11", "text": "当你难以决定要不要开始时，不妨先把目标切成最小颗粒，从一件能在十分钟内完成的小事开始，借由完成的确定性，逐步积累信心与动力。重要的不是一开始就惊天动地，而是每天都能稳定推进哪怕一小步。", "image": "", "source": "自我管理", "sourceType": "随笔", "author": "佚名", "license": "permitted", "score": 0.86, "tags": ["行动", "习惯"], "lang": "zh" },
+    { "id": "q-12", "text": "真正的休息，不是躺下刷手机，而是让身心回到能量的源头：一场有质量的睡眠、一段完全不被打扰的独处、一次在自然中的慢行。只有当你的内在负荷被释放，外在的效率才会重新回来。", "image": "", "source": "生活方式", "sourceType": "随笔", "author": "佚名", "license": "permitted", "score": 0.84, "tags": ["恢复", "效率"], "lang": "zh" },
+    { "id": "q-13", "text": "很多时候，我们以为自己缺的是时间，其实缺的是决断。决定了，就有了方向；有了方向，才谈得上分配时间与精力。把决定推迟，本质上是在推迟成长。", "image": "", "source": "认知", "sourceType": "随笔", "author": "佚名", "license": "permitted", "score": 0.85, "tags": ["决策", "成长"], "lang": "zh" }
   ]
 }
